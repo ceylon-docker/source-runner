@@ -29,7 +29,7 @@ Use the option -q option to suppress output from the runner itself.
 
 Running the following docker command will automatically download, compile and start the [Ceylon Web IDE](https://github.com/ceylon/ceylon-web-ide-backend):
 
-    docker run -t --rm -p 8080:8080 ceylon/source-runner:1.2.2 ceylon/ceylon-web-ide-backend "" --address 0.0.0.0
+    docker run -t -p 8080 ceylon/source-runner ceylon/ceylon-web-ide-backend "" --address 0.0.0.0
 
 When it has finished starting up you can connect to it with your browser at http://localhost:8080
 
