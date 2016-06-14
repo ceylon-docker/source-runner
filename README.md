@@ -11,7 +11,7 @@ The following images/tags are available:
 This set of images can be used to very quickly and easily download, compile and run Ceylon code from a variety of sources. The image itself when run without any arguments will tell you:
 
 ```
-Usage: docker run ceylon/source-runner [-q] <repo-module-url> [<module>]
+Usage: docker run ceylon/source-runner [-q] <repo-module-url> [<module>] [args...]
 
 The <repo-module-url> argument can either be:
  - a GitHub repository name, eg: "ceylon/ceylon.formatter"
@@ -23,6 +23,8 @@ The runner will try to figure out which module to run, but if it can't or if you
 to override the choice it makes you can specify its name as the <module> argument.
 
 Use the option -q option to suppress output from the runner itself.
+
+And finally any arguments after the <module> argument will be passed on to the `ceylon run` command.
 ```
 
 ### Example
