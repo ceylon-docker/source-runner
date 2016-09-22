@@ -26,9 +26,14 @@ else
 fi
 
 REPO=$1
-MODULE=$2
-shift 2
-ARGS="$@"
+if [[ $# -lt 2 ]]; then
+    MODULE=
+    ARGS=
+else
+    MODULE=$2
+    shift 2
+    ARGS="$@"
+fi
 
 VERSION=master
 
@@ -72,7 +77,28 @@ if [[ ${MODULE} == "" ]]; then
     MODULE=${MODULES[0]}
 fi
 
+# See if the config file defines the module to run for the JVM.
+javamodule=$(ceylon config get runtool.java.module)
+
+# See if the config file defines the module to run for JavaScript.
+jsmodule=$(ceylon config get runtool.js.module)
+
+# We first checked "runtool.java.module" and if that didn't exist
+# we try "runtool.module" and finally we default to "$MODULE"
+if [[ -z "$javamodule" && -z "$jsmodule" ]]; then
+	javamodule=$(ceylon config get runtool.module)
+	if [[ -z "$javamodule" ]]; then
+		javamodule=$MODULE
+	fi
+fi
+
+# Now depending on the modules we found we either execute them
+# with the JVM or the JS backend (or both). The --sysrep argument
+# can be used because the `assemble` script already copied all
+# dependencies including the system modules. It's needed because
+# ceylon.io doesn't allow opening of read-only files
 $ECHO "Starting..."
 $ECHO ""
-ceylon run ${MODULE} ${ARGS}
+[[ ! -z "$javamodule" ]] && exec ceylon run $javamodule ${ARGS}
+[[ ! -z "$jsmodule" ]] && exec ceylon run-js $jsmodule ${ARGS}
 
