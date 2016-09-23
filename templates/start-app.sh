@@ -78,12 +78,12 @@ if [[ ${MODULE} == "" ]]; then
 fi
 
 # See if the config file defines the module to run for the JVM.
-javamodule=$(ceylon config get runtool.java.module)
+javamodule=$(ceylon config get runtool.jvm.module)
 
 # See if the config file defines the module to run for JavaScript.
 jsmodule=$(ceylon config get runtool.js.module)
 
-# We first checked "runtool.java.module" and if that didn't exist
+# We first checked "runtool.jvm.module" and if that didn't exist
 # we try "runtool.module" and finally we default to "$MODULE"
 if [[ -z "$javamodule" && -z "$jsmodule" ]]; then
 	javamodule=$(ceylon config get runtool.module)
