@@ -2,12 +2,12 @@
 
 The following images/tags are available:
 
- - `1.3.0-jre8`, `1.3.0`, `latest` ([ceylon/Dockerfile](https://github.com/ceylon-docker/source-runner/blob/1.3.0-jre8/Dockerfile))
- - `1.2.2-jre8`, `1.2.2` ([ceylon/Dockerfile](https://github.com/ceylon-docker/source-runner/blob/1.2.2-jre8/Dockerfile))
- - `1.2.1-jre8`, `1.2.1` ([ceylon/Dockerfile](https://github.com/ceylon-docker/source-runner/blob/1.2.1-jre8/Dockerfile))
- - `1.2.0-jre8`, `1.2.0` ([ceylon/Dockerfile](https://github.com/ceylon-docker/source-runner/blob/1.2.0-jre8/Dockerfile))
- - `1.1.0-jre8`, `1.1.0` ([ceylon/Dockerfile](https://github.com/ceylon-docker/source-runner/blob/1.1.0-jre8/Dockerfile))
- - `1.0.0-jre8`, `1.0.0` ([ceylon/Dockerfile](https://github.com/ceylon-docker/source-runner/blob/1.0.0-jre8/Dockerfile))
+ - `1.3.0-jre8`, `1.3.0`, `latest` ([ceylon/Dockerfile](https://github.com/ceylon-docker/source-runner/blob/master/1.3.0/1.3.0-jre8/Dockerfile))
+ - `1.2.2-jre8`, `1.2.2` ([ceylon/Dockerfile](https://github.com/ceylon-docker/source-runner/blob/master/1.2.2/1.2.2-jre8/Dockerfile))
+ - `1.2.1-jre8`, `1.2.1` ([ceylon/Dockerfile](https://github.com/ceylon-docker/source-runner/blob/master/1.2.1/1.2.1-jre8/Dockerfile))
+ - `1.2.0-jre8`, `1.2.0` ([ceylon/Dockerfile](https://github.com/ceylon-docker/source-runner/blob/master/1.2.0/1.2.0-jre8/Dockerfile))
+ - `1.1.0-jre8`, `1.1.0` ([ceylon/Dockerfile](https://github.com/ceylon-docker/source-runner/blob/master/1.1.0/1.1.0-jre8/Dockerfile))
+ - `1.0.0-jre8`, `1.0.0` ([ceylon/Dockerfile](https://github.com/ceylon-docker/source-runner/blob/master/1.0.0/1.0.0-jre8/Dockerfile))
 
 *For all these images there is also a `x.y.z-jre7` version available*
 
