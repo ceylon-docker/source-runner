@@ -3,10 +3,10 @@
 set -e
 
 # Define all the versions that should be generated
-VERSIONS=(1.3.0 1.2.2 1.2.1 1.2.0 1.1.0 1.0.0)
+VERSIONS=(1.3.1 1.3.0 1.2.2 1.2.1 1.2.0 1.1.0 1.0.0)
 
 # Define the "latest" version
-LATEST=1.3.0
+LATEST=1.3.1
 
 # Define which JRE versions to generate for
 JRES=(7 8)
