@@ -2,7 +2,7 @@
 
 The following images/tags are available:
 
- - `1.3.1-jre8`, `1.3.1`, `latest` ([ceylon/Dockerfile](https://github.com/ceylon-docker/source-runner/blob/master/1.3.1/1.3.1-jre8/Dockerfile))
+ - `1.3.1-jre8`, `1.3.1`, `latest-jre8`, `latest` ([ceylon/Dockerfile](https://github.com/ceylon-docker/source-runner/blob/master/1.3.1/1.3.1-jre8/Dockerfile))
  - `1.3.0-jre8`, `1.3.0` ([ceylon/Dockerfile](https://github.com/ceylon-docker/source-runner/blob/master/1.3.0/1.3.0-jre8/Dockerfile))
  - `1.2.2-jre8`, `1.2.2` ([ceylon/Dockerfile](https://github.com/ceylon-docker/source-runner/blob/master/1.2.2/1.2.2-jre8/Dockerfile))
  - `1.2.1-jre8`, `1.2.1` ([ceylon/Dockerfile](https://github.com/ceylon-docker/source-runner/blob/master/1.2.1/1.2.1-jre8/Dockerfile))
