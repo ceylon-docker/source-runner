@@ -3,7 +3,7 @@
 set -e
 
 # Define all the versions that should be generated
-VERSIONS=(1.3.1 1.3.0 1.2.2 1.2.1 1.2.0 1.1.0 1.0.0)
+VERSIONS=(1.0.0 1.1.0 1.2.0 1.2.1 1.2.2 1.3.0 1.3.1)
 
 # Define the "latest" version
 LATEST=1.3.1
@@ -31,7 +31,7 @@ for arg in "$@"; do
             echo "Usage: $0 [--help] [--pull] [--build] [--push] [--clean] [--verbose]"
             echo ""
             echo "   --help    : shows this help text"
-            echo "   --push    : pulls any previously existing images from Docker Hub"
+            echo "   --pull    : pulls any previously existing images from Docker Hub"
             echo "   --build   : runs 'docker build' for each image"
             echo "   --push    : pushes each image to Docker Hub"
             echo "   --clean   : removes local images"
@@ -156,6 +156,9 @@ function build_jres() {
                 if [[ "$VERSION" == "$LATEST" ]]; then
                     TAGS+=("latest")
                 fi
+            fi
+            if [[ "$VERSION" == "$LATEST" ]]; then
+                TAGS+=("latest-$JRE")
             fi
         fi
         build_normal_onbuild $VERSION $FROM $JRE $PLATFORM "${TAGS[@]}"
