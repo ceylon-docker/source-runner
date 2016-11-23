@@ -111,6 +111,9 @@ function build_dir() {
             docker rmi "${IMAGE}:$t"
         done
     fi
+    echo "Cleaning up..."
+    local oldimages=$(docker images --filter dangling=true -q 2>/dev/null)
+    [[ -n "$oldimages" ]] && docker rmi $oldimages
     popd > /dev/null
 }
 
