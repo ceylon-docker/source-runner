@@ -2,7 +2,8 @@
 
 The following images/tags are available:
 
- - `1.3.2-jre8`, `1.3.2`, `latest-jre8`, `latest` ([ceylon/Dockerfile](https://github.com/ceylon-docker/source-runner/blob/master/1.3.2/1.3.2-jre8/Dockerfile))
+ - `1.3.3-jre8`, `1.3.3`, `latest-jre8`, `latest` ([ceylon/Dockerfile](https://github.com/ceylon-docker/source-runner/blob/master/1.3.3/1.3.3-jre8/Dockerfile))
+ - `1.3.2-jre8`, `1.3.2` ([ceylon/Dockerfile](https://github.com/ceylon-docker/source-runner/blob/master/1.3.2/1.3.2-jre8/Dockerfile))
  - `1.3.1-jre8`, `1.3.1` ([ceylon/Dockerfile](https://github.com/ceylon-docker/source-runner/blob/master/1.3.1/1.3.1-jre8/Dockerfile))
  - `1.3.0-jre8`, `1.3.0` ([ceylon/Dockerfile](https://github.com/ceylon-docker/source-runner/blob/master/1.3.0/1.3.0-jre8/Dockerfile))
  - `1.2.2-jre8`, `1.2.2` ([ceylon/Dockerfile](https://github.com/ceylon-docker/source-runner/blob/master/1.2.2/1.2.2-jre8/Dockerfile))
@@ -39,4 +40,3 @@ Running the following docker command will automatically download, compile and st
     docker run -t -p 8080 ceylon/source-runner ceylon/ceylon-web-ide-backend "" --address 0.0.0.0
 
 When it has finished starting up you can connect to it with your browser at http://localhost:8080
-
